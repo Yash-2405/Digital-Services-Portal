@@ -1,0 +1,136 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 45 15% 97%;
+    --foreground: 0 5% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 5% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 5% 15%;
+
+    --primary: 0 65% 55%;
+    --primary-foreground: 45 15% 97%;
+
+    --secondary: 30 35% 85%;
+    --secondary-foreground: 0 5% 25%;
+
+    --muted: 45 15% 92%;
+    --muted-foreground: 0 5% 45%;
+
+    --accent: 45 85% 65%;
+    --accent-foreground: 0 5% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 25% 88%;
+    --input: 30 25% 88%;
+    --ring: 0 65% 55%;
+
+    --radius: 0.75rem;
+
+    /* Bhutanese Color Palette */
+    --bhutan-red: 0 65% 55%;
+    --bhutan-gold: 45 85% 65%;
+    --bhutan-blue: 210 60% 45%;
+    --bhutan-white: 45 15% 97%;
+    --bhutan-ochre: 30 45% 60%;
+    --bhutan-deep-red: 0 70% 35%;
+    --bhutan-mountain-blue: 210 45% 25%;
+  }
+
+  .dark {
+    --background: 0 5% 8%;
+    --foreground: 45 15% 95%;
+
+    --card: 0 5% 12%;
+    --card-foreground: 45 15% 95%;
+
+    --popover: 0 5% 12%;
+    --popover-foreground: 45 15% 95%;
+
+    --primary: 0 65% 55%;
+    --primary-foreground: 45 15% 97%;
+
+    --secondary: 0 5% 18%;
+    --secondary-foreground: 45 15% 85%;
+
+    --muted: 0 5% 18%;
+    --muted-foreground: 45 10% 65%;
+
+    --accent: 45 85% 65%;
+    --accent-foreground: 0 5% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 5% 18%;
+    --input: 0 5% 18%;
+    --ring: 0 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Bhutanese-inspired patterns and gradients */
+.bhutan-pattern {
+  background: linear-gradient(135deg, hsl(var(--bhutan-red)) 0%, hsl(var(--bhutan-gold)) 100%);
+}
+
+.bhutan-mountain-gradient {
+  background: linear-gradient(180deg, hsl(var(--bhutan-blue)) 0%, hsl(var(--bhutan-mountain-blue)) 100%);
+}
+
+.thunder-dragon-glow {
+  box-shadow: 0 0 30px hsl(var(--bhutan-gold) / 0.3);
+}
+
+/* Smooth animations */
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
