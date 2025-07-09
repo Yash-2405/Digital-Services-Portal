@@ -16,8 +16,7 @@ Druk is built using the latest modern stack and visually inspired by Bhutanese c
 
 ## 🎥 Prototype Demo (with Audio)
 
-▶️ **[Click here to watch the walkthrough](#)**  
-*(Add your Loom or YouTube video link here)*
+▶️ **[Click here to watch the walkthrough](https://www.loom.com/share/a165aeef3904458db7aac089f6118520?sid=8af1eb0e-44b4-4d62-9e7b-39485efd58bb)**  
 
 🎙️ Includes a guided audio explanation of all core features and flows.
 
@@ -57,16 +56,6 @@ Druk is built using the latest modern stack and visually inspired by Bhutanese c
 ### 🖼️ Bhutan-Inspired Rich Dashboard
 - UI inspired by **Bhutanese motifs, symbols, and colors**.
 - Real-time status updates, DID verification, downloadable credentials.
-
----
-
-## 🎥 Prototype Demo (with Audio)
-
-Watch our prototype demo walkthrough on Loom:
-
-🔗 [Click here to view](https://www.loom.com/share/a165aeef3904458db7aac089f6118520?sid=8af1eb0e-44b4-4d62-9e7b-39485efd58bb)
-
-🎙️ This video includes a guided audio explanation of the core features and flows.
 
 ---
 
